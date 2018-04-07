@@ -55,6 +55,28 @@
             cursor: pointer;
             margin-right: 0.1rem;
         }
+        .content-logo {
+            text-align: center;
+        }
+        .form-control {
+            width: 12rem;
+            margin: 0 auto;
+        }
+        .form-control>input {
+            width: 100%;
+            border: 1px solid rgba(141, 195, 255, 0.51);
+            color: #8dc3ff;
+            background: transparent;
+            outline: 0;
+            padding: 0.2rem 0 0.2rem 0.2rem;
+            transition: border-top-color 0.2s ease-in-out 0.1s, border-right-color 0.2s ease-in-out 0.1s, border-bottom-color 0.2s ease-in-out 0.1s, border-left-color 0.2s ease-in-out 0.1s;
+        }
+        .form-control>input::placeholder {
+            color: rgba(141, 195, 255, 0.51);
+        }
+        .form-control>input:focus {
+            border: 1px solid #8dc3ff;
+        }
     </style>
 </head>
 <body>
@@ -68,7 +90,17 @@
 
         </div>
         <div class="block-content">
-
+            <h2 class="content-logo">Artifius</h2>
+            <form>
+                <div class="form-control" >
+                    <p>Enter user name</p>
+                    <input type="text" placeholder="Enter user name">
+                </div>
+                <div class="form-control" >
+                    <p>Enter password</p>
+                    <input type="password" placeholder="Enter password">
+                </div>
+            </form>
         </div>
     </div>
 </div>
